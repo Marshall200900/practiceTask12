@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace task12
 {
-    class ShellSort
+    public class ShellSort
     {
         public int Moves { get; private set; } = 0;
         public int Comparisons { get; private set; } = 0;

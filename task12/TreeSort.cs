@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace task12
 {
-    class Node
+    public class Node
     {
          
         public Node Left { get; set; }
@@ -17,7 +17,7 @@ namespace task12
             Value = val;
         }
     }
-    class TreeSort
+    public class TreeSort
     {
         public int Comparisons { get; private set; } = 0;
         public int Moves { get; private set; } = 0;
@@ -46,7 +46,7 @@ namespace task12
                             break;
                         }
                     }
-                    else if (array[i] >= pointer.Value)
+                    else
                     {
                         if (pointer.Right != null)
                             pointer = pointer.Right;
